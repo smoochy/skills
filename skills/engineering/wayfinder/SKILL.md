@@ -70,6 +70,12 @@ Blocking uses the tracker's **native** dependency relationship: essential becaus
 
 The answer isn't part of the body; it's recorded on resolution (see [Work through the map](#work-through-the-map)). Assets created while resolving a ticket are linked from the issue, not pasted in.
 
+### Work found on the map belongs to the map
+
+Resolving a ticket turns up adjacent work: a bug beside the one just fixed, a follow-up the answer makes obvious, a question the ticket wasn't asking. That work becomes a **child issue of the map**, carrying a `wayfinder:<type>` label and wired into the blocking edges, exactly like a ticket the map charted for itself. It does not become a loose issue under whatever general backlog label the tracker uses for unrelated findings.
+
+What decides this is where the finding was made, not how big it is or whether it is on the route. A finding made while holding a claimed ticket was found on the map's surface, by a session the map dispatched, so it is part of this effort by construction. Filed loose it leaves the map's world: the frontier query stops seeing it, **Not yet specified** never learns about it, and the map reads as finished while work that belongs to it sits somewhere the map cannot reach. Where the finding turns out to sit past the destination, [rule it out of scope](#out-of-scope), which is still a decision recorded on the map rather than an issue filed away from it.
+
 ## Ticket Types
 
 Every ticket is either **HITL** (human in the loop, worked _with_ a human who speaks for themselves) or **AFK**, driven by the agent alone. A HITL ticket only resolves through that live exchange; the agent never stands in for the human's side of it (a grilling agent that answers its own questions has broken this).
